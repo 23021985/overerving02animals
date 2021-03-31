@@ -7,22 +7,21 @@ public class Main{
 
     public static void main(String[] args) {
 
-        InToTheWild simba = new InToTheWild("Simba", "male",  "Lion");
-        System.out.println(simba.moved(6) + " meters, " + simba.haveEaten("steak, ") + simba.timeOfSleep(8)+" , " + simba.makesSound(" WROOAAAHHHHRRR" + " net als Katie Perry zo ongeveer"));
+        InToTheWild simba = new InToTheWild("Simba", "male",  "Lion", "1", "Monday");
+        System.out.println("\n" + simba.moved(6) + " , " + simba.haveEaten("steak, ") + simba.timeOfSleep(8)+", " +"\n" + simba.makesSound(" WROOAAAHHHHRRR" + " net als Katie Perry zo ongeveer, ") + simba.isFromOrigin("Disneyland ") + "en daar leeft " + simba.kids(8)+".");
+
+        InToTheWild mowgli = new InToTheWild("Mowgli", "male", "Wolf", "2", "Friday");
+        System.out.println("\n" + mowgli.moved( 22) + ", " + mowgli.haveEaten(" een lekker kippetje ") + mowgli.timeOfSleep(8)+", " +"\n" + mowgli.makesSound(" HuilieHuilie!!!!" + " vooral bij volle maan") + mowgli.isFromOrigin("Junglebook") + mowgli.isFomRoedel("area 51."));
+
+        InToTheWild tijgetje = new InToTheWild("Tijgetje", "male", "Tiger", "3", "Saturday");
+        System.out.println("\n" + tijgetje.moved(500) +" (vooral springend). " + tijgetje.haveEaten(" grote potten honing van Winnie, " + tijgetje.timeOfSleep(8) +", "+"\n" + tijgetje.isFromOrigin("van Winnie de Poeh en ")  + tijgetje.makesSound("gromGrom (afgewisseld met jeeeeejjjj!! whoohohooohhoooo!!!...  ")+"\n" + tijgetje.stripes(255)+"."));
+
+        Pets bolt = new Pets("Bolt", "male", "Dog", "The girl from the movie", "Willies Hondenbrokken");
+        System.out.println("\n" + bolt.moved(9)  +", "+ bolt.haveEaten("lekkere brokjes en " + bolt.timeOfSleep(8)+ " , " + bolt.makesSound(" woefBlaf " ) + bolt.family("terriër")));
 
 
-        InToTheWild mowgli = new InToTheWild("Mowgli", "male", "Wolf");
-        System.out.println("\n" + mowgli.moved( 22) + " meters, " + mowgli.haveEaten(" een lekker kippetje ") + mowgli.timeOfSleep(8)+" , " + mowgli.makesSound(" HuilieHuilie!!!!" + " vooral bij volle maan"));
-
-        InToTheWild tijgetje = new InToTheWild("Tijgetje", "male", "Tiger");
-        System.out.println("\n" + tijgetje.moved(500) +" meters, vooral springend " + tijgetje.haveEaten(" een hele grote pot honing van Winnie " + tijgetje.timeOfSleep(8) +" , " + tijgetje.makesSound("gromGrom (afgewisseld met jeeeeejjjj!! whoohohooohhoooo")));
-
-        Pets bolt = new Pets("Bolt", "male", "Dog");
-        System.out.println("\n" + bolt.moved(9) + " meters " + bolt.haveEaten(" lekkere brokjes " + bolt.timeOfSleep(8)+ " , " + bolt.makesSound(" woefBlaf" )));
-
-
-        Pets arlo = new Pets("Arlo", "woman", "Cat");
-        System.out.println("\n" + arlo.moved(2) + " meter " + arlo.haveEaten("lekker vette haring" + arlo.timeOfSleep(8) + " , "+ arlo.makesSound("Miaaaauuuwwwwwwww")));
+        Pets arlo = new Pets("Arlo", "woman", "Cat", "le Woman", "Whiskas");
+        System.out.println("\n" + arlo.moved(2)+", " + arlo.haveEaten("lekker vette haring en" + arlo.timeOfSleep(8) + " , "+ arlo.makesSound("Miaaaauuuwwwwwwww")+"\n" + arlo.wantsToLive( "buiten ") + arlo.family("Siamees")+"."));
     }
 
 

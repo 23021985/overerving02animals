@@ -3,7 +3,7 @@ package nl.novi.javaprogrammeren.overerving;
 
 import nl.novi.javaprogrammeren.Main;
 
-public class Animal extends Main {
+public abstract class Animal extends Main {
     protected String animalName;
     protected String sex;
     protected String species;
@@ -24,23 +24,25 @@ public class Animal extends Main {
     // methods
     public String moved(double distance){
         double moved = distance *0.25;
-        return this.animalName + " has moved a distance of " + moved;
+        return this.animalName + " heeft de afstand " + moved + " meter afgelegd";
     }
 
     public String timeOfSleep(int hours) {
         int TimeOfSleep = 8;
-        return this.animalName + " slept " + hours +" hours";
+        return this.animalName + " sliep " + hours +" uur";
 
     }
 
     public String haveEaten(String food) {
-        return this.animalName + " has eaten a lot of " + food;
+        return this.animalName + " eet echt vet veel " + food;
 
     }
     //methode sound
     public String makesSound(String animalSound){
-    return this.animalName + " makes the lovely sound of " + animalSound;
+    return this.animalName + " maakt het volgende geluid: " + animalSound;
     }
+
+    public abstract void houseOfAnimal(int hokje);
 }
 
 
